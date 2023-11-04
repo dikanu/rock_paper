@@ -9,7 +9,7 @@ name = input("Enter Your Name:- ")
 
 while True:
 	print("\nEnter your choice \n 1 - Rock \n 2 - Paper \n 3 - Scissors \n")
-	choice=int(input("Enter your choice :"))
+	choice=int(input("Enter your choice : "))
 	
 	while choice > 3 or choice <1:
 		choice=int(input('Enter a valid choice'))
@@ -35,10 +35,11 @@ while True:
 		comp_choice_name = 'rocK'
 
 	elif comp_choice == 2:
-		comp_choice_name = 'Paper'
+		comp_choice_name = 'papeR'
 
 	else:
-		comp_choice_name = 'scissoR'
+		comp_choice_name = 'scissorS'
+	
 	print("\nComputer choice is \n", comp_choice_name)
 	print(choice_name,'Vs',comp_choice_name)
 
@@ -48,28 +49,28 @@ while True:
 
 	if (choice==1 and comp_choice==2):
 		print('Paper wins =>',end="")
-		result='Paper'
+		result='papeR'
 
 	elif (choice==2 and comp_choice==1):
 		print('Paper wins =>',end="")
 		result='Paper'
 		
 	
-	if (choice==1 and comp_choice==3):
+	elif (choice==1 and comp_choice==3):
 		print('Rock wins =>\n',end= "")
 		result='Rock'
 
 	elif (choice==3 and comp_choice==1):
 		print('Rock wins =>\n',end= "")
-		result='Rock'
+		result='rocK'
 		
-	if (choice==2 and comp_choice==3):
+	elif (choice==2 and comp_choice==3):
 		print('Scissors wins =>',end="")
-		result='Scissor'
+		result='scissorS'
 
 	elif (choice==3 and comp_choice==2):
 		print('Scissors wins =>',end="")
-		result='Rock'
+		result='Scissors'
 
 	if result == 'DRAW':
 		print("<== Its a tie ==>\n")
